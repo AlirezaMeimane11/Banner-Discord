@@ -10,10 +10,10 @@ client.on('ready' , async () => {
     console.log('bot ready');
 
     setInterval( async () => {
-        let guild = client.guilds.cache.get("901080739242733609")
+        let guild = client.guilds.cache.get("Guild Id")
         const canvas = Canvas.createCanvas(2920,1642);
         const context = canvas.getContext('2d');
-        const background = await Canvas.loadImage('https://media.discordapp.net/attachments/937116977024090182/937119208934891550/Picsart_22-01-30_02-26-43-547.jpg')   
+        const background = await Canvas.loadImage('Image Id')   
         context.drawImage(background, 0, 0, canvas.width, canvas.height);
         
         context.strokeRect(0, 0, canvas.width, canvas.height);
@@ -47,7 +47,7 @@ client.on('ready' , async () => {
 });
 
 client.on("ready", () => {
-    client.user.setActivity('Developed By katyusha-pixis')
+    client.user.setActivity('Coded By Aм')
       const channel = client.channels.cache.get("901097493482324088");
       if (!channel) return console.error("The channel does not exist!");
       channel.join().then(connection => {
@@ -58,4 +58,4 @@ client.on("ready", () => {
   });
 
 
-client.login("OTA1MTIxNTE4NjM4NDY5MjEx.YYFeGg.n4AQ6SWmuD_KatnJJiyQpZluwFg");
+client.login("Your Token");
